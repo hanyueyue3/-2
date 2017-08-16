@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+    <div data-user-Name="Tom"></div>
+
+    <script>
+        var div=document.querySelector('div');
+      console.log(div.getAttribute('data-user-name'));//Tom
+      console.log(div.dataset.userName);//Tom
+      console.log(div.dataset['userName']);//Tom
+        console.log(div.dataset.username);//undefined
+
+
+
+    </script>
+</body>
+</html>

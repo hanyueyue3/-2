@@ -1,0 +1,75 @@
+#menu {
+  border-top: 10px solid #f1f1f1;
+}
+#menu .item {
+  text-align: center;
+}
+#menu .item a img {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+}
+#menu .item a p {
+  font-size: 12px;
+  margin-top: 10px;
+}
+#menu .item:nth-last-child(-n+4) {
+  display: none;
+}
+#discount .discount-title {
+  height: 35px;
+  line-height: 35px;
+  background-color: #ff841d;
+  color: #fff;
+  padding: 0 10px;
+  font-size: 16px;
+}
+#discount .discount-title img {
+  float: right;
+  width: 20px;
+  height: 20px;
+  margin-top: 7px;
+  display: block;
+}
+#discount .discount-product .media {
+  margin-top: 15px;
+}
+#discount .discount-product .media:first-child {
+  margin-top: 0;
+}
+#discount .discount-product .media .media-left a img {
+  width: 100px;
+  height: 100px;
+}
+#discount .discount-product .media .media-body {
+  padding-right: 10px;
+}
+#discount .discount-product .media .media-body h4 {
+  height: 50px;
+  line-height: 24px;
+  font-size: 16px;
+}
+#discount .discount-product .media .media-body .other {
+  font-size: 12px;
+  color: #a1a1a1;
+  margin-top: 30px;
+}
+#discount .discount-product .media .media-body .other .other-shop {
+  float: left;
+}
+#discount .discount-product .media .media-body .other .other-talk {
+  float: right;
+}
+#discount .discount-more {
+  padding: 10px;
+}
+#discount .discount-more a {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  background-color: #F4F4F4;
+  color: #000;
+  text-align: center;
+  border: 1px solid #f1f1f1;
+  border-radius: 15px;
+}

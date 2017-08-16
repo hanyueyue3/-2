@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>慢慢买（韩月月）</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet/less" href="./css/base.less">
+    <link rel="stylesheet/less" href="./css/category.less">
+    <script src="./js/less.js"></script>
+</head>
+<body>
+<!--header start-->
+<header id="header" class="clearfix">
+    <div class="logo">
+        <a href="#">
+            <img src="./images/header_logo.png" alt="">
+        </a>
+    </div>
+    <div class="app_down">
+        <a href="#">
+            <img src="./images/header_app.png" alt="">
+        </a>
+    </div>
+</header>
+<!--header end-->
+<!--搜索区 start-->
+<div id="search">
+    <form action="" class="form_search">
+        <input type="search" placeholder="请输入你想选择的商品">
+        <input type="button" value="搜索">
+    </form>
+</div>
+<!--搜索区 end-->
+
+<!--类别start-->
+<div id="category">
+    <ul class="category-ul">
+        <li>
+            <a href="#">大家电</a>
+                <ul class="clearfix">
+                    <li>电视</li>
+                    <li>空调</li>
+                    <li>冰箱</li>
+                    <li>电视</li>
+                    <li>空调</li>
+                    <li>冰箱</li>
+                </ul>
+        </li>
+    </ul>
+</div>
+<!--类别end-->
+
+
+<!--footer start-->
+<footer id="footer">
+    <div class="login-top">
+        <div class="login">登入</div>
+        <div class="resgiter">注册</div>
+        <div class="goTop">
+            <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">
+            返回顶部
+        </div>
+    </div>
+    <div class="login-bottom">
+        <span>手机APP下载</span>
+        <span>慢慢买手机版</span>
+        <span>掌上比价平台</span>
+        <p> m.manmanbuy.com</p>
+    </div>
+</footer>
+<!--footer end-->
+
+
+<!--模板一 category-title-->
+<script type="text/template" id="categoryTitle">
+    {{each result as value index}}
+        <li>
+            <a href="#" data-title-id='{{value.titleId}}'>{{value.title}}</a>
+            <ul class="clearfix"></ul>
+        </li>
+    {{/each}}
+</script>
+
+
+<!--模板二 categoryProduct-->
+<script type="text/template" id="categoryProduct">
+    {{each result as value index}}
+        <li>
+            <a href="#">{{value.category}}</a>
+        </li>
+    {{/each}}
+</script>
+
+
+
+
+
+
+<script src="./lib/jquery/jquery.js"></script>
+<script src="./lib/bootstrap/js/bootstrap.js"></script>
+<script src="./js/template.js"></script>
+<script src="./js/category.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
